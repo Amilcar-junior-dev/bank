@@ -5,21 +5,20 @@ export const data = [
         name: 'Home',
         screenKey: 'HomeInteligence',
         default: true,
-        icon: 'home'
+        icon: require('../../Assets/img/house.png')
     },
     {
         id: 1,
         name: 'Transferencia',
         screenKey: 'TransferInteligence',
         default: false,
-        icon: 'credit-card'
+        icon: require('../../Assets/img/transfer.png')
     },
     {
         id: 2,
         name: 'Profile',
         screenKey: 'ProfileInteligence',
         default: false,
-        icon: 'user'
+        icon: require('../../Assets/img/profile.png')
     },
 ]
-

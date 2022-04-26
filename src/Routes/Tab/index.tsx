@@ -16,14 +16,23 @@ export default function () {
             <Screen
                 name='HomeInteligence'
                 component={HomeInteligence}
+                options={{
+                    headerShown: false
+                }}
             />
             <Screen
                 name='TransferInteligence'
                 component={TransferInteligence}
+                options={{
+                    headerShown: false
+                }}
             />
             <Screen
                 name='ProfileInteligence'
                 component={ProfileInteligence}
+                options={{
+                    headerShown: false
+                }}
             />
         </Navigator>
     )

@@ -27,10 +27,10 @@ import {
     TextBoxInternalHistoric,
 } from './styled';
 
-import Transfer from 'react-native-vector-icons/dist/MaterialCommunityIcons';
-import Star from 'react-native-vector-icons/dist/Entypo';
-import Wallet from 'react-native-vector-icons/dist/FontAwesome';
-import CredCard from 'react-native-vector-icons/dist/AntDesign';
+//import Transfer from 'react-native-vector-icons/dist/MaterialCommunityIcons';
+//import Star from 'react-native-vector-icons/dist/Entypo';
+//import Wallet from 'react-native-vector-icons/dist/FontAwesome';
+//import CredCard from 'react-native-vector-icons/dist/AntDesign';
 
 const Home: React.FC<PropsHome> = ({
     teatle,
@@ -80,15 +80,27 @@ const Home: React.FC<PropsHome> = ({
 
                 <BoxOptions>
                     <ItemBoxOptions>
-                        <Transfer name="bank-transfer" size={40} color="#020202" />
+                        <Image source={require('../../Assets/img/coluna.png')}
+                        style={{
+                            width:40,
+                            height:40
+                        }}/>
                         <TextItemBoxOptions>Transfer</TextItemBoxOptions>
                     </ItemBoxOptions>
                     <ItemBoxOptions>
-                        <Wallet name="money" size={40} color="#020202" />
+                    <Image source={require('../../Assets/img/wallet.png')}
+                        style={{
+                            width:40,
+                            height:40
+                        }}/>
                         <TextItemBoxOptions>Wallet</TextItemBoxOptions>
                     </ItemBoxOptions>
                     <ItemBoxOptions>
-                        <CredCard name="creditcard" size={40} color="#020202" />
+                    <Image source={require('../../Assets/img/details.png')}
+                        style={{
+                            width:40,
+                            height:40
+                        }}/>
                         <TextItemBoxOptions>Details</TextItemBoxOptions>
                     </ItemBoxOptions>
                 </BoxOptions>
@@ -109,7 +121,7 @@ const Home: React.FC<PropsHome> = ({
                     <BoxHistoricDiary key={index}>
 
                         <BoxInternalHistoric>
-                            <Star name="star-outlined" size={40} color="#0839e9" />
+                           
                             <Box>
                                 <TextBoxInternalHistoric style={{ fontSize: 20, fontWeight: "bold", color: "#575757" }}>{item.name}</TextBoxInternalHistoric>
                                 <TextBoxInternalHistoric>{item.subtitle}</TextBoxInternalHistoric>

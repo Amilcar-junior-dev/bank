@@ -13,3 +13,6 @@ padding:5px 10px;
 `
 export const TouchableOpacity = styled.TouchableOpacity`
 `
+export const Icon = styled.Image`
+`
+    
